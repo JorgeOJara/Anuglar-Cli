@@ -1,0 +1,9 @@
+.forms{
+    margin-top:5%;
+    display:flex;
+    justify-content: center;
+}
+.int{
+    font-size:25px;
+    padding-right:10px;
+}

@@ -1,0 +1,21 @@
+<div  class='container forms'>
+    <label class="sr-only" for="inlineFormInput">Name</label>
+    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" #name placeholder="Jane Doe">
+  
+    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+      <div class="input-group-addon int">@</div>
+      <input type="text" class="form-control" id="inlineFormInputGroup" #user placeholder="Username">
+    </div>
+  
+    <button type="submit" (click)='send(user.value,name.value)' class="btn btn-primary">Submit</button>
+
+ 
+</div>
+<div *ngIf='show' class='container'>
+    <h2>Thanks!!</h2>
+  <ul>
+     <li class="list-group-item">{{username}} / {{email}}</li>
+  </ul>
+    <button class='btn btn-info' (click) = 'close()'>Close</button>
+  </div>
